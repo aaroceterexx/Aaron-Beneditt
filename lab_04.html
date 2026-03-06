@@ -1,0 +1,31 @@
+<!--Aaron Beneditt-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>lab_04 Student Admission</title>
+  <link rel="stylesheet" href="lab_04.css">
+</head>
+<body>
+  <div class="title"><!--esto es pa centrar to el doc -->
+    <h1>Student Admission Email Generator</h1>
+    <p>Fill this information to generate your email</p>
+    <form action="emailcreator.php" method="post">
+      <label for="first_name">First Name</label>
+      <input id="first_name" name="first_name" type="text" placeholder="type first name here" required>
+      <label for="last_name">Last Name</label>
+      <input id="last_name" name="last_name" type="text" placeholder="type last name here" required>
+      <label for="date_bith">Date of Birth</label>
+      <input id="date_bith" name="date_bith" type="date" required>
+      <label for="dept_name">Department Name</label>
+      <select id="dept_name" name="dept_name" required>
+        <option value="">Select your dept</option>
+        <option value="cs">(CS) Computer Science</option>
+        <option value="ee">(EE) Electrical Engineering</option>
+        <option value="cyb">(CYB) Cybersecurity</option>
+        <option value="bus">(BUS) Business</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
